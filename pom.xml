@@ -14,14 +14,6 @@
 
     <repositories>
         <repository>
-            <id>spigot</id>
-            <url>https://maven.notfab.net/SpigotMC/</url>
-        </repository>
-        <repository>
-            <id>sk89q-repo</id>
-            <url>https://maven.sk89q.com/repo/</url>
-        </repository>
-        <repository>
             <id>dmulloy2-repo</id>
             <url>https://repo.dmulloy2.net/repository/public/</url>
         </repository>
@@ -29,13 +21,22 @@
             <id>jitpack</id>
             <url>https://jitpack.io</url>
         </repository>
+        <repository>
+            <id>viaversion-repo</id>
+            <url>https://repo.viaversion.com</url>
+        </repository>
+        <repository>
+            <id>refine</id>
+            <name>Refine Development Repo</name>
+            <url>https://maven.refinedev.xyz/public-repo</url>
+        </repository>
     </repositories>
 
     <dependencies>
         <dependency> <!-- NMS 1.8.8 -->
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
-            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <groupId>org.paperspigot</groupId>
+            <artifactId>PaperSpigot</artifactId>
+            <version>1.8.8</version>
             <scope>provided</scope>
         </dependency>
         <dependency> <!-- NMS 1.7.10 -->
@@ -52,9 +53,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency> <!-- ViaVersion -->
-            <groupId>com.github.MylesIsCool</groupId>
-            <artifactId>ViaVersion</artifactId>
-            <version>3.2.1</version>
+            <groupId>com.viaversion</groupId>
+            <artifactId>viaversion-api</artifactId>
+            <version>[5.0.0,6.0.0)</version>
             <scope>provided</scope>
         </dependency>
         <dependency> <!-- ProtocolSupport -->

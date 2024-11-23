@@ -9,6 +9,7 @@ import me.lucanius.edge.player.version.ClientVersion;
 import me.lucanius.edge.skin.Skin;
 import me.lucanius.edge.tab.Tab;
 import me.lucanius.edge.tab.impl.Tab_1_7;
+import me.lucanius.edge.tools.CC;
 import me.lucanius.edge.tools.LegacyTools;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -118,7 +119,7 @@ public class PlayerTab {
         adapter.getEntries(player).forEach(data ->
                 entries.stream().filter(entry -> entry.getColumn() == data.getColumn() && entry.getSlot() == data.getSlot()).findFirst().ifPresent(entry -> {
                     oldEntries.remove(entry);
-                    tab.updateFake(this, entry, data.getText());
+                    tab.updateFake(this, entry, CC.translate(data.getText()));
                     tab.updateLatency(this, entry, data.getLatency());
                     if (!v1_7) {
                         tab.updateSkin(this, entry, data.getSkin());

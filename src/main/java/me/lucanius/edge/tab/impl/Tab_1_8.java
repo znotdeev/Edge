@@ -2,6 +2,7 @@ package me.lucanius.edge.tab.impl;
 
 import com.comphenix.protocol.ProtocolLibrary;
 import com.mojang.authlib.GameProfile;
+import com.viaversion.viaversion.api.Via;
 import me.lucanius.edge.column.TabColumn;
 import me.lucanius.edge.entry.TabEntry;
 import me.lucanius.edge.player.PlayerTab;
@@ -19,7 +20,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.scoreboard.Team;
 import protocolsupport.api.ProtocolSupportAPI;
-import us.myles.ViaVersion.api.Via;
 
 import java.util.Collections;
 import java.util.List;
